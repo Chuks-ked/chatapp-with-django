@@ -98,7 +98,6 @@
                                 </div>
 
                                 <div class="card-body msg_card_body">
-                                    <!------- messages ------->
                                     {% for chat in thread.chatmessage_thread.all %}
                                         {% if chat.user == user %}
                                             <div class="d-flex mb-4 replied">
@@ -122,9 +121,6 @@
                                         </div>
                                         {% endif %}
                                     {% endfor %}
-
-
-                                    <!------- messages ------->
                                 </div>
 
 					        </div>
